@@ -1,53 +1,44 @@
 # Paceline 🏃‍♂️
 
-### Modern Running Store — Responsive Frontend Website
+A modern, responsive sports e-commerce website focused on running and performance footwear.
 
-Paceline is a modern, responsive running-store website built with **HTML, CSS, and vanilla JavaScript**. The project focuses on creating a clean, premium e-commerce-style experience for runners, with dedicated Home and About pages, product discovery, interactive filters, wishlist controls, responsive navigation, and accessibility-focused design.
+Paceline was developed as part of a **DCS Web Cluster Frontend Task**, with a focus on responsive design, interactive user experience, accessibility, and clean frontend structure.
 
-> **Frontend project built as a DCS Web Cluster frontend task.**
+## 🚀 Live Demo
 
----
+[View Paceline Live](https://mellow-fairy-536735.netlify.app)
+
+## 📂 Repository
+
+[GitHub Repository](https://github.com/sanjanaramesh0530/paceline)
 
 ## ✨ Features
 
-* 📱 **Responsive Design** — Mobile-first layout adapting to different screen sizes
-* 🏠 **Home Page** — Hero section, categories, new arrivals, promotions, and brand story
-* 📖 **About Page** — Brand story, timeline, values, founders, and store information
-* 🛍️ **Product Filtering** — Filter products by New In, Best Sellers, Race Day, and Trail
-* ❤️ **Wishlist Interaction** — Toggle wishlist buttons for products
-* 🎞️ **Hero Slider** — Interactive featured content with slide indicators
-* 📧 **Newsletter Form** — Client-side email validation
-* 📊 **Animated Statistics** — Count-up animation for store statistics
-* ✨ **Scroll Reveal Animations** — Elements animate into view while scrolling
-* 📱 **Mobile Navigation** — Responsive hamburger menu
-* ⬆️ **Back to Top** — Convenient navigation for longer pages
-* ♿ **Accessibility Features** — Skip link, visible focus states, ARIA labels, and reduced-motion support
-* 🖼️ **Optimized Images** — Lazy loading and prioritized hero imagery
-
----
+- Responsive design for desktop, tablet, and mobile
+- Interactive navigation and mobile menu
+- Product category filtering
+- Product search functionality
+- Interactive hero section
+- Wishlist interactions
+- Newsletter subscription form
+- Back-to-top functionality
+- Keyboard-friendly interactions
+- Accessible buttons, labels, and navigation
+- Responsive layout across different screen sizes
 
 ## 🛠️ Technologies Used
 
-| Technology       | Purpose                                                |
-| ---------------- | ------------------------------------------------------ |
-| **HTML5**        | Page structure and semantic markup                     |
-| **CSS3**         | Responsive layouts, animations, variables, and styling |
-| **JavaScript**   | Interactions and dynamic functionality                 |
-| **SVG**          | Lightweight interface icons                            |
-| **Google Fonts** | Inter typography                                       |
+- **HTML5** – Semantic page structure
+- **CSS3** – Responsive layouts and styling
+- **JavaScript** – Interactive functionality and dynamic filtering
 
-No frameworks or build tools are required.
-
----
-
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
 paceline/
 │
-├── index.html
-├── about.html
-├── README.md
+├── assets/
+│   └── img/
 │
 ├── css/
 │   └── style.css
@@ -55,185 +46,6 @@ paceline/
 ├── js/
 │   └── main.js
 │
-└── assets/
-    └── img/
-        ├── hero.jpg
-        ├── road.jpg
-        ├── trail.jpg
-        ├── apparel.jpg
-        ├── accessories.jpg
-        ├── shoe.jpg
-        ├── story.jpg
-        ├── mens.jpg
-        ├── womens.jpg
-        ├── joggers.jpg
-        ├── rae.jpg
-        ├── jamie.jpg
-        └── map.jpg
-```
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/sanjanaramesh0530/paceline.git
-```
-
-### 2. Navigate into the project
-
-```bash
-cd paceline
-```
-
-### 3. Run the website
-
-Since Paceline is a static website, there is no build process.
-
-You can simply open:
-
-```text
-index.html
-```
-
-in your browser.
-
-Alternatively, start a local server:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
-
-You can also use:
-
-```bash
-npx serve .
-```
-
----
-
-## 🌐 Pages
-
-### Home
-
-The homepage contains:
-
-* Hero banner
-* Featured collection
-* Running categories
-* Product listing
-* Product filters
-* Wishlist controls
-* Brand story
-* Running collections
-* Newsletter subscription
-
-### About
-
-The About page contains:
-
-* Paceline's story
-* Brand values
-* Company timeline
-* Store information
-* Founder profiles
-* Newsletter section
-
----
-
-## 🎨 Design
-
-Paceline follows a **modern editorial sportswear aesthetic**, combining:
-
-* Bold typography
-* Large imagery
-* Minimal layouts
-* Strong contrast
-* Responsive grids
-* Subtle animations
-* Clear calls-to-action
-
-The design is built using CSS variables and responsive breakpoints, with a mobile-first approach.
-
----
-
-## ♿ Accessibility
-
-Accessibility was considered throughout the project.
-
-Implemented features include:
-
-* Semantic HTML landmarks
-* Skip-to-content link
-* ARIA labels for interactive controls
-* Visible keyboard focus states
-* Reduced-motion support
-* Descriptive image alt text
-* Accessible form labels
-
----
-
-## 📱 Responsive Breakpoints
-
-The stylesheet uses responsive breakpoints at approximately:
-
-```text
-700px
-1024px
-```
-
-This allows the layout to adapt between mobile, tablet, and desktop screen sizes.
-
----
-
-## 🔮 Future Improvements
-
-Potential improvements for future versions include:
-
-* 🛒 Fully functional shopping cart
-* 🔎 Functional product search
-* 👤 User authentication
-* 💳 Checkout and payment integration
-* 📦 Product detail pages
-* ❤️ Persistent wishlist storage
-* 🗄️ Backend/database integration
-* 📧 Functional newsletter backend
-* 🏷️ Dynamic product data
-* 🔐 User accounts and order history
-
----
-
-## 📌 Project Status
-
-**Frontend:** ✅ Completed
-
-Paceline currently functions as a static frontend experience. E-commerce backend functionality such as authentication, payments, persistent carts, and database-driven products can be added in future iterations.
-
----
-
-## 📄 License
-
-This project was created for educational and portfolio purposes.
-
----
-
-## 👩‍💻 Author
-
-**Sanjana Ramesh**
-
-Computer Science Engineering Student
-
-GitHub:
-https://github.com/sanjanaramesh0530
-
----
-
-⭐ If you found this project interesting, consider giving the repository a star!
+├── index.html
+├── about.html
+└── README.md

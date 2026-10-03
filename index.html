@@ -16,11 +16,26 @@
 <a class="logo" href="index.html" aria-label="Paceline home">PACELINE</a>
 <nav aria-label="Main"><ul><li><a href="#">Men</a></li><li><a href="#">Women</a></li><li><a href="#">Footwear</a></li><li><a href="#">Apparel</a></li><li><a href="#">Brands</a></li><li><a href="#">Sale</a></li><li><a href="about.html">About</a></li></ul></nav>
 <div class="icons">
-<button aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+    <button class="search-btn" aria-label="Search" aria-expanded="false">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="11" cy="11" r="7"/>
+    <path d="m20 20-4-4"/>
+  </svg>
+</button>
 <button aria-label="Account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 15-5 16 0"/></svg></button>
 <button aria-label="Cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h3l2 12h11l2-8H7"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span class="badge">2</span></button>
 <button class="burger" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div></div></header>
+<div class="search-overlay" aria-hidden="true">
+  <div class="search-box">
+    <input
+      type="search"
+      placeholder="Search products..."
+      aria-label="Search products"
+    >
+    <button class="close-search" aria-label="Close search">✕</button>
+  </div>
+</div>
 <main id="main">
 <section class="hero" aria-label="Featured">
 <img src="assets/img/hero.jpg" alt="A runner crossing a pale desert landscape" fetchpriority="high" width="1600" height="800">
@@ -52,12 +67,12 @@
 <footer class="site dark"><div class="wrap">
 <div class="fcols">
 <div><a class="logo" href="index.html">PACELINE</a><p style="max-width:240px;margin-top:12px">Race-day gear, trail-tested essentials, and everyday running kit — curated in Glasgow since 2015.</p></div>
-<div><h4>SHOP</h4><ul><li><a href="#">Men's</a><li><a href="#">Women's</a><li><a href="#">Footwear</a><li><a href="#">Apparel</a><li><a href="#">Accessories</a><li><a href="#">Sale</a></ul></div>
-<div><h4>HELP</h4><ul><li><a href="#">Contact</a><li><a href="#">Shipping</a><li><a href="#">Returns</a><li><a href="#">Size Guides</a><li><a href="#">Gait Analysis</a><li><a href="#">FAQs</a></ul></div>
-<div><h4>COMPANY</h4><ul><li><a href="about.html">About Us</a><li><a href="#">Store · Glasgow</a><li><a href="#">Sustainability</a><li><a href="#">Careers</a><li><a href="#">Wholesale</a><li><a href="#">Press</a></ul></div>
-<div><h4>FOLLOW</h4><ul><li><a href="#">Instagram</a><li><a href="#">Strava</a><li><a href="#">TikTok</a><li><a href="#">YouTube</a><li><a href="#">Newsletter</a><li><a href="#">Blog</a></ul></div>
+<div><h4>SHOP</h4><ul><li><a href="#">Men's</a></li><li><a href="#">Women's</a></li><li><a href="#">Footwear</a></li><li><a href="#">Apparel</a></li><li><a href="#">Accessories</a></li><li><a href="#">Sale</a></li></ul></div>
+<div><h4>HELP</h4><ul><li><a href="#">Contact</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Size Guides</a></li><li><a href="#">Gait Analysis</a></li><li><a href="#">FAQs</a></li></ul></div>
+<div><h4>COMPANY</h4><ul><li><a href="about.html">About Us</a></li><li><a href="#">Store · Glasgow</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Careers</a></li><li><a href="#">Wholesale</a></li><li><a href="#">Press</a></li></ul></div>
+<div><h4>FOLLOW</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Strava</a></li><li><a href="#">TikTok</a></li><li><a href="#">YouTube</a></li><li><a href="#">Newsletter</a></li><li><a href="#">Blog</a></li></ul></div>
 </div>
-<div class="legal"><span>© 2026 Paceline Running Co. — All rights reserved.</span><div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a><a href="#">Accessibility</a></div></div>
+<div class="legal"><span>© 2026 Paceline Running Co. — All rights reserved.</span><div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</а ><а href="#">Accessibility</а ></div></div>
 </div></footer>
 <div class="progress" aria-hidden="true"></div>
 <button class="totop" aria-label="Back to top" hidden>↑</button>

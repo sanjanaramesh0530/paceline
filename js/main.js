@@ -2,6 +2,33 @@
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
+const searchBtn = $('.search-btn');
+const searchOverlay = $('.search-overlay');
+const closeSearch = $('.close-search');
+
+searchBtn?.addEventListener('click', () => {
+  searchOverlay?.classList.add('open');
+  searchOverlay?.setAttribute('aria-hidden', 'false');
+  $('.search-box input')?.focus();
+});
+
+closeSearch?.addEventListener('click', () => {
+  searchOverlay?.classList.remove('open');
+  searchOverlay?.setAttribute('aria-hidden', 'true');
+});
+
+const searchInput = $('.search-box input');
+
+searchInput?.addEventListener('input', () => {
+  const query = searchInput.value.trim().toLowerCase();
+
+  $$('.prod').forEach(product => {
+    const text = product.textContent.toLowerCase();
+    const matches = text.includes(query);
+
+    product.style.display = matches ? '' : 'none';
+  });
+});
 // Hide images whose file is missing (alt text stays available to screen readers)
 $$('img').forEach(i => i.addEventListener('error', () => (i.style.visibility = 'hidden')));
 
@@ -51,11 +78,9 @@ $$('.pills button').forEach(b => b.addEventListener('click', () => {
 }));
 
 // Wishlist hearts + cart badge count
-const cart = $('.badge');
 $$('.heart').forEach(h => h.addEventListener('click', () => {
   const on = h.getAttribute('aria-pressed') !== 'true';
   h.setAttribute('aria-pressed', on);
-  if (cart) cart.textContent = Math.max(0, +cart.textContent + (on ? 1 : -1));
 }));
 
 // Newsletter validation
@@ -86,3 +111,17 @@ addEventListener('scroll', () => {
   toTop.hidden = h.scrollTop < 600;
 }, { passive: true });
 toTop.addEventListener('click', () => scrollTo({ top: 0 }));
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && searchOverlay?.classList.contains('open')) {
+    searchOverlay.classList.remove('open');
+    searchOverlay.setAttribute('aria-hidden', 'true');
+    searchBtn?.focus();
+  }
+});
+searchOverlay?.addEventListener('click', e => {
+  if (e.target === searchOverlay) {
+    searchOverlay.classList.remove('open');
+    searchOverlay.setAttribute('aria-hidden', 'true');
+    searchBtn?.focus();
+  }
+});
